@@ -2,7 +2,11 @@
  * refer: https://confluence.eng.vmware.com/display/GQ/React
  */
 
-import { i18nClient as vipClient, getBrowserCultureLang } from '@vip/vip-core-sdk';
+import {
+  i18nClient as vipClient,
+  getBrowserCultureLang,
+  PatternCategories
+} from '@vip/vip-core-sdk';
 
 import { ENGLISH } from './source.l10n';
 
@@ -12,7 +16,8 @@ const initI18nClient = () => {
     productID: 'appName',
     version: '1.0.0',
     component: 'ui',
-    host: 'http://g11n-vip-dev-1.eng.vmware:8090',
+    host: 'https://g11n-vip-dev-1.eng.vmware.com:8090/',
+    i18nScope: [PatternCategories.DATE, PatternCategories.NUMBER],
     language: currentLanguage,
     sourceBundles: [ENGLISH],
     isPseudo: true,
