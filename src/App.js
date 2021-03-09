@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import { l10n } from './i18n/i18n.utils';
+import { l10n, formatDate } from './i18n/i18n.utils';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
           {l10n('LEARN')}
         </a>
+        <span>{formatDate(new Date(), 'MMMM d, y, h:mm:ss a z')}</span>
       </header>
     </div>
   );

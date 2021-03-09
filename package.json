@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "collect-source-bundle": "collect-source-bundle --source-dir `pwd`/src/i18n/ --product appName --component ui --host https://g11n-vip-stg-1.eng.vmware.com:8090 --version 1.0.0"
+    "collect-source-bundle": "collect-source-bundle --source-dir `pwd`/src/i18n/ --product appName --component ui --host https://g11n-vip-dev-1.eng.vmware.com:8090 --version 1.0.0"
   },
   "eslintConfig": {
     "extends": [
