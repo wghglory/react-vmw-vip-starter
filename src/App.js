@@ -12,7 +12,7 @@ function App() {
         <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
           {l10n('LEARN')}
         </a>
-        <span>{formatDate(new Date(), 'MMMM d, y, h:mm:ss a z')}</span>
+        <p>{formatDate(new Date(), 'MMMM d, y, h:mm:ss a z')}</p>
       </header>
     </div>
   );

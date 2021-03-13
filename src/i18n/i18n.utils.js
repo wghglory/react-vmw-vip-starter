@@ -8,6 +8,6 @@ export function formatDate(date, pattern) {
   try {
     return i18nClient.i18nService.formatDate(date, pattern);
   } catch (paramError) {
-    return "Invalid date";
+    return 'Invalid date';
   }
 }
