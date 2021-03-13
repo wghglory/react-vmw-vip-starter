@@ -3,6 +3,8 @@ import './App.css';
 
 import { l10n, formatDate } from './i18n/i18n.utils';
 
+import Button from './components/Button';
+
 function App() {
   return (
     <div className='App'>
@@ -13,6 +15,7 @@ function App() {
           {l10n('LEARN')}
         </a>
         <p>{formatDate(new Date(), 'MMMM d, y, h:mm:ss a z')}</p>
+        <Button>Test react-styleguidist</Button>
       </header>
     </div>
   );
