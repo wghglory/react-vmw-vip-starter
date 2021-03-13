@@ -19,6 +19,7 @@
     "collect-source-bundle": "collect-source-bundle --source-dir `pwd`/src/i18n/ --product appName --component ui --host https://g11n-vip-dev-1.eng.vmware.com:8090 --version 1.0.0",
     "initialFormat": "./node_modules/.bin/prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
   },
+  "proxy": "http://localhost:4000",
   "eslintConfig": {
     "extends": [
       "react-app",
