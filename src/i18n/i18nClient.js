@@ -2,11 +2,7 @@
  * refer: https://confluence.eng.vmware.com/display/GQ/React
  */
 
-import {
-  i18nClient as vipClient,
-  getBrowserCultureLang,
-  PatternCategories
-} from '@vip/vip-core-sdk';
+import { i18nClient as vipClient, getBrowserCultureLang, PatternCategories } from '@vip/vip-core-sdk';
 
 import { ENGLISH } from './source.l10n';
 
